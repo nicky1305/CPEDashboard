@@ -97,6 +97,17 @@ export default defineConfig(({ command, mode }) => {
     //     },
     //   }
     // })(),
+    server: {
+      host: '0.0.0.0', // Bind to all network interfaces to make it publicly accessible
+      port: 5173,      // Default port, change if needed
+      open: true,      // Open the browser automatically when the server starts
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3000',
+          changeOrigin: true,
+        },
+      },
+    },
     clearScreen: false,
   }
 })

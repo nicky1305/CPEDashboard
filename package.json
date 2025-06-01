@@ -72,7 +72,7 @@
     "simplebar-react": "^3.2.4",
     "sonner": "^1.7.0",
     "styled-components": "^6.0.9",
-    "tailwind-merge": "^2.5.4",
+    "tailwind-merge": "^3.3.0",
     "zustand": "^4.4.3"
   },
   "devDependencies": {
